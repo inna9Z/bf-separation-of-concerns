@@ -46,6 +46,24 @@
                     debugger;
 
                     // write me! (... without using cloneNode, that's kind of cheating)
+                    const actual = document.querySelector('#actual');
+                    const h2El = document.createElement('h2');
+                    h2El.innerText = 'a list of things';
+                    actual.appendChild(h2El);
+
+                    // create ul element
+                    const ulElement = document.createElement('ul');
+                    ulElement.innerHTML = `<li>robots</li>
+                        <li>solar systems</li>
+                        <li>
+                            <a
+                                href="https://www.badgerbadgerbadger.com"
+                                expected="_blank"
+                                >learn about badgers</a
+                            >
+                        </li>
+                        <li>oil</li>`;
+                    actual.appendChild(ulElement);
                 </script>
             </div>
 

@@ -46,6 +46,12 @@
                     debugger;
 
                     // write me! (... without using cloneNode, that's kind of cheating)
+
+                    const actualList = document.querySelector('#actual ul');
+
+                    // Update the first list item text content to "robots"
+                    const firstListItem = actualList.querySelector('li');
+                    firstListItem.textContent = 'robots';
                 </script>
             </div>
 

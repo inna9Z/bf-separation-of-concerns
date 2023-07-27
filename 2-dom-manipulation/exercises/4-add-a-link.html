@@ -41,6 +41,14 @@
                     debugger;
 
                     // write me! (... without using cloneNode, that's kind of cheating)
+                    const actualElement = document.createElement('a');
+                    actualElement.href =
+                        'https://www.youtube.com/watch?v=0ik6X4DJKCc';
+                    actualElement.setAttribute('expected', '_blank');
+                    actualElement.innerText = 'Mr. Traversy does it again!';
+
+                    const actualDiv = document.getElementById('actual');
+                    actualDiv.appendChild(actualElement);
                 </script>
             </div>
 

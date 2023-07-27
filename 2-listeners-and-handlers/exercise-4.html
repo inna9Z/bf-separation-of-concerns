@@ -38,7 +38,7 @@
         <script id="handlers">
             'use strict';
 
-            const _ = (event) => {
+            const first = (event) => {
                 debugger;
                 console.assert(event.type === 'click', 'first, event.type');
                 console.assert(
@@ -61,7 +61,7 @@
 
             const second = (event) => {
                 debugger;
-                console.assert(event.type === '_', 'second, event.type');
+                console.assert(event.type === 'change', 'second, event.type');
                 console.assert(
                     event.target.id === 'selector',
                     'second, event.target.id',
@@ -74,7 +74,7 @@
         </script>
 
         <script id="listeners">
-            document.getElementById('_').addEventListener('click', first);
+            document.getElementById('user-action').addEventListener('click', first);
             document
                 .getElementById('selector')
                 .addEventListener('change', second);

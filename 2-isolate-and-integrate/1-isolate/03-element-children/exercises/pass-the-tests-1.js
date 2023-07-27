@@ -9,7 +9,12 @@ ulEl.innerHTML = `
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
+const newInnerHTMLs = ['toad', 'frog', 'salamander'];
 
+const listItems = ulEl.querySelectorAll('li');
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].innerHTML = newInnerHTMLs[i];
+}
 // --- --- --- --- --- ---
 
 console.log(ulEl.nodeName, ulEl.cloneNode(true));

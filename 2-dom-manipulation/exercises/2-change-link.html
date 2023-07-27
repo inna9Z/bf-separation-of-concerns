@@ -44,6 +44,9 @@
                     debugger;
 
                     // write me! (... without using cloneNode, that's kind of cheating)
+                    const actualLink = document.querySelector('#actual a');
+                    actualLink.innerText = 'learn about badgers';
+                    actualLink.setAttribute('expected', '_blank');
                 </script>
             </div>
 

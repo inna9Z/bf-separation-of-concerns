@@ -45,6 +45,17 @@
                     debugger;
 
                     // write me! (... without using cloneNode, that's kind of cheating)
+
+                    const actualElement = document.querySelector('#actual');
+                    const h1 = document.createElement('h1');
+                    h1.innerText = 'a list of things';
+                    actualElement.insertBefore(h1, actualElement.firstChild);
+
+                    // Replace the incorrect list item text content with "solar systems"
+                    const actualList = document
+                        .getElementById('actual')
+                        .querySelectorAll('li');
+                    actualList[1].innerText = 'solar systems';
                 </script>
             </div>
 
